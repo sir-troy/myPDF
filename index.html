@@ -11,11 +11,16 @@
     if(t!=='light')t='dark';
     document.documentElement.dataset.theme=t;})();
   </script>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2322d3ee'/%3E%3Cstop offset='1' stop-color='%23a855f7'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M32 3l25 14.5v29L32 61 7 46.5v-29z' fill='%2305060f' stroke='url(%23g)' stroke-width='4'/%3E%3Cpath d='M24 20h12l6 6v18H24z' fill='none' stroke='url(%23g)' stroke-width='3.5' stroke-linejoin='round'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&family=Dancing+Script:wght@600&family=Great+Vibes&family=Caveat:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="useful-indeed/footer.css">
+<script src="version-log.js"></script>
+<link rel="canonical" href="https://mypdf.useful-indeed.com/">
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<link rel="apple-touch-icon" href="logo.svg">
+<style id="useful-indeed-mobile">.logo-mark .ui-applogo{width:34px;height:34px;border-radius:9px;display:block}/* mobile fixes */html,body{overflow-x:clip}</style>
 </head>
 <body>
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -44,7 +49,7 @@
   <header class="topbar">
     <div class="container topbar-inner">
       <a href="#home" class="logo" aria-label="MyPDF home">
-        <span class="logo-mark"><svg viewBox="0 0 64 64"><path d="M32 3l25 14.5v29L32 61 7 46.5v-29z" fill="none" stroke="url(#grad)" stroke-width="4"/><path d="M24 20h12l6 6v18H24z" fill="none" stroke="url(#grad)" stroke-width="3.5" stroke-linejoin="round"/></svg></span>
+        <span class="logo-mark"><img class="ui-applogo" src="logo.svg" alt="" width="34" height="34"></span>
         <span class="logo-text">My<b>PDF</b></span>
       </a>
       <nav class="nav">
@@ -351,7 +356,7 @@
     <div class="container">
       <span class="logo-text">My<b>PDF</b></span>
       <p>Free, private PDF tools that run in your browser.</p>
-      <div class="copyright"><span>© <span id="year"></span> MyPDF <span class="ver" id="app-version">v1.0</span></span><span class="sys-ok"><span class="dot"></span> ALL SYSTEMS LOCAL</span></div>
+      <div class="copyright" hidden style="display:none!important"><span>© <span id="year"></span> MyPDF <span class="ver" id="app-version">v1.0</span></span><span class="sys-ok"><span class="dot"></span> ALL SYSTEMS LOCAL</span></div>
     </div>
   </footer>
 
@@ -368,5 +373,13 @@
   <script src="config.js"></script>
   <script src="app.js"></script>
   <script src="fx.js"></script>
+<footer class="ui-foot">
+  <div class="ui-foot-in">
+    <a class="ui-foot-brand" href="https://useful-indeed.com" title="More small, free tools on useful-indeed"><img src="useful-indeed/logo.svg" alt="useful-indeed logo" width="22" height="22"><span>© <span data-ui-year>2026</span> <b>useful-indeed</b></span></a>
+    <nav class="ui-foot-nav" aria-label="Site"><a href="about.html">About</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="contact.html">Contact</a></nav>
+    <button type="button" class="ui-foot-ver" data-ui-ver>v1.0 · Version log</button>
+  </div>
+</footer>
+<script src="useful-indeed/badge.js" defer></script>
 </body>
 </html>

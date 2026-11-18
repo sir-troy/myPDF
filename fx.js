@@ -81,7 +81,7 @@ if (title) {
       runBar();
     }, 650);
   }
-  function startCycle() { clearInterval(timer); runBar(); timer = setInterval(() => { if (!document.hidden && !document.getElementById('home').hidden) next(); }, 5000); }
+  function startCycle() { clearInterval(timer); runBar(); timer = setInterval(() => { if (!document.hidden && !document.getElementById('home').hidden) next(); }, 3000); }
   (document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve()).then(reserveHeight);
   let rt; window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(reserveHeight, 150); });
   document.addEventListener('visibilitychange', () => { if (!document.hidden) startCycle(); });

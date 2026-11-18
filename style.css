@@ -101,7 +101,7 @@ body.nav-open .menu-btn span:nth-child(3){transform:translateY(-7px) rotate(-45d
 @keyframes lineOut{to{transform:translateY(-105%) rotateX(40deg);opacity:0;filter:blur(6px)}}
 .headline-progress{width:120px;height:3px;border-radius:3px;background:var(--stroke);margin:-4px 0 22px;overflow:hidden}
 .headline-progress span{display:block;height:100%;width:0;background:var(--grad);border-radius:3px}
-.headline-progress span.run{animation:hlBar 5s linear forwards}
+.headline-progress span.run{animation:hlBar 3s linear forwards}
 @keyframes hlBar{to{width:100%}}
 @keyframes lineUp{from{transform:translateY(110%) rotateX(-40deg);opacity:0}to{transform:none;opacity:1}}
 .hero-title .grad-text{animation:lineUp 1.1s .12s var(--ease) both,gradShift 6s ease-in-out infinite}
